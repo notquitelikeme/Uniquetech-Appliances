@@ -124,10 +124,10 @@ async function fetchAndDisplayProducts(collectionName, containerId) {
         <div class="product">
                 <img src="${data.image1}" alt="${doc.id}" />
                 <p>${doc.id}</p>
-            <span>KES ${data.Price}</span>
+            <span>KES ${data.Price}</span></a>
             <button id="add-to-cart" data-product="${doc.id}" data-collection="${collectionName}">Add to cart</button>
         </div>
-        </a>`;
+        `;
 
         container.innerHTML += productCard;
     });

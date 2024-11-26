@@ -161,9 +161,9 @@ function renderProducts(products, container) {
         <a href="product-details.html?productId=${product.id}&collection=${product.collectionName}">
             <img src="${sanitizeUrl(product.image1 || 'placeholder.jpg')}" alt="${product.id}" />
             <p>${product.id}</p>
-            <span>KES ${product.Price.toLocaleString()}</span><br>
+            <span>KES ${product.Price.toLocaleString()}</span><br></a>
             <button class="add-to-cart-btn" data-product="${product.id}" data-collection="${product.collectionName}">Add to cart</button>
-        </a>`;
+        `;
         container.appendChild(productElement);
     });
 

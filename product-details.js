@@ -130,7 +130,7 @@ async function getProductDetails() {
                 <img src="${data.image1}" alt="${productId}" id="ProductImg">
             </div>
             <div class="product-info-container">
-                <p class="breadcrumb">Home/${collectionName}</p>
+                <p class="breadcrumb">Home / ${collectionName} / ${productId}</p>
                 <h1 id="product-name">${productId}</h1>
                 <h5>Colour: ${data.Colour}</h5>
                 <h5>Size: ${data.Size}</h5>
